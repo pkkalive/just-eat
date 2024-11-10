@@ -1,0 +1,34 @@
+{
+  "name": "just-eat",
+  "version": "1.0.0",
+  "description": "This is a online food ordering app developed by PK",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkkalive/just-eat.git"
+  },
+  "keywords": [
+    "online",
+    "food",
+    "odering",
+    "app"
+  ],
+  "author": "Purushotham Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkkalive/just-eat/issues"
+  },
+  "homepage": "https://github.com/pkkalive/just-eat#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  }
+}
