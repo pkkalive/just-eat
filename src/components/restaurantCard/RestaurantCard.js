@@ -1,14 +1,19 @@
-import biryani from "../../../public/assets/biryani.jpg";
+import { RESTAURANT_LOGO_URL } from "../../utils/constants";
 
-const RestaurantCard = (props) => {
-  const { resName, cuisine } = props;
+const RestaurantCard = ({ restaurantInfo }) => {
+  const { id, name, cloudinaryImageId, cuisines, avgRating, deliveryTime } =
+    restaurantInfo;
   return (
-    <div className="res-card">
-      <img src={biryani} className="res-logo" alt="res-logo" />
-      <h3>{resName}</h3>
-      <h4>{cuisine}</h4>
-      <h4>4.4 stars</h4>
-      <h4>38 minutes</h4>
+    <div key={id} className="res-card">
+      <img
+        src={`${RESTAURANT_LOGO_URL}/${cloudinaryImageId}`}
+        className="res-logo"
+        alt="res-logo"
+      />
+      <h3>{name}</h3>
+      <h4>{cuisines}</h4>
+      <h4>{avgRating}</h4>
+      <h4>{deliveryTime} minutes</h4>
     </div>
   );
 };
